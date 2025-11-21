@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Game: Rock Paper Scissors</title>
+	<link rel ="stylesheet" href ="style.css"/>
+</head>
+<body>
+	<div class ="gamecontainer">
+		<h1>Rock, Paper, Scissors</h1>
+		<p class="instructions">
+			Choose your moves below. You can play up to 3 rounds.
+			The game will end if you win a round.
+		</p>
+		<div class ="buttons">
+			<button onclick="playRound('Rock')">Rock</button>
+			<button onclick="playRound('Paper')">Paper</button>
+			<button onclick="playRound('Scissors')">Scissors</button>
+		</div>
+		<div class ="status">
+			<p id ="player-choice">Your Choice: </p>
+			<p id ="computer-choice">Computer's Choice: </p>
+			<p id="result">Result: -</p>
+		</div>
+		<div class ="score">
+			<p id ="player-score">Your Score: 0</p>
+			<p id ="computer-score">Computer's Score: 0</p>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
